@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/colormap-shaders">
+{% for file in files %}<file alias="{{ file }}">./shaders/glsl/{{ file }}</file>
+{% endfor %}</qresource>
+</RCC>
