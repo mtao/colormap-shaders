@@ -8,4 +8,6 @@ colormap_sources = qt6.compile_resources(sources:'shaders.qrc')
 
 colormap_shaders_include_path = include_directories('include')
 
-library('colormap_shaders', colormap_sources, dependencies: qt6_dep)
+libcolormap = library('colormap_shaders', colormap_sources, dependencies: qt6_dep, include_directories: colormap_shaders_include_path)
+
+colormap_shaders_dep = declare_dependency(include_directories: colormap_shaders_include_path, link_with: libcolormap)
