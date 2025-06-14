@@ -21,7 +21,7 @@ private:
 		#pragma clang diagnostic ignored "-Wkeyword-macro"
 		#elif defined(__GNUC__)
 		#pragma GCC diagnostic push
-		#pragma GCC diagnostic ignored "-Wkeyword-macro"
+		
 		#endif
 
 		#define float local_real_t
